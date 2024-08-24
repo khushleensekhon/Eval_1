@@ -1,117 +1,145 @@
-/* Ensure proper positioning */
-.wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Base styles for the navigation */
+header nav {
+    width: 100%;
+    height: 12%;
+    margin: 5px auto;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
-.images {
-    position: relative;
-    height: 300px;
-    width: 400px;
-    margin: 10px; /* Margin for spacing around each image container */
-   
-    
+header nav .right_bx {
+    display: flex;
+    align-items: center;
 }
 
-.images img {
-    position: absolute;
-    left: 0;
-    height: 300px;
-    width: 400px;
-    transition: opacity 0s ease-in-out;
-    border-radius: 20px;
-  
+header nav .right_bx ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
 
-/* Hover effect for images */
-.images img:hover {
-    opacity: 0;
+header nav .right_bx ul li {
+    padding: 3px 15px;
+}
+
+header nav .right_bx ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+header nav .right_bx ul li a:hover {
+    color: #000;
+}
+
+header nav .right_bx .account_bx {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header nav .right_bx .account_bx .bi {
+    margin-left: 15px;
+    color: gray;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header nav .right_bx .account_bx .bi:hover {
+    color: #000;
+}
+
+/* Hide the checkbox */
+#menuToggle {
+    display: none;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 22px;
     cursor: pointer;
 }
 
-/* Style for the text label */
-.label {
-    position: absolute;
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    color: white; /* Change color to ensure visibility */
-    font-size: 24px; /* Adjust as needed */
-    font-weight: 600; /* Bold for better visibility */
-    background: rgba(0, 0, 0, 0.5); /* Optional: background for better readability */
-    padding: 5px; /* Optional: padding around the text */
-    border-radius: 5px; /* Optional: rounded corners for the background */
-    padding: 7px 30px;
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
-.invest{
+
+/* When the checkbox is checked, rotate and transform the hamburger menu */
+#menuToggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menuToggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuToggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Hide the menu on small screens by default */
+header nav .right_bx {
+    display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#menuToggle:checked ~ .right_bx {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    margin-bottom: 0%;
+    background-color: #f9f9f9;
+    padding: 20px 0;
 }
 
-@media (max-width: 992px) {
-    .invest {
-        margin-bottom: 20px; /* Add spacing below the .invest div */
-        padding: 0 10px; /* Adjust horizontal padding for smaller screens */
-    }
+header nav .right_bx ul {
+    flex-direction: column;
+    width: 100%;
 }
 
-/* For mobile devices (up to 768px) */
-@media (max-width: 768px) {
-    .invest {
-        margin-bottom: 20px; /* Ensure spacing below the .invest div */
-        padding: 0 10px; /* Maintain padding for smaller screens */
-        font-size: 16px; /* Adjust font size for readability on mobile devices */
-    }
+header nav .right_bx ul li {
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
-/* For very small mobile devices (up to 480px) */
-@media (max-width: 480px) {
-    .invest {
-        margin-bottom: 20px; /* Maintain spacing below the .invest div */
-        padding: 0 5px; /* Reduce horizontal padding for very small screens */
-        font-size: 14px; /* Further reduce font size for better fit on small screens */
-    }
+header nav .right_bx .account_bx {
+    margin-top: 15px;
 }
-@media (max-width: 770px) {
-    .wrapper {
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center items horizontally */
-    }
 
-    .images {
-        width: 90%; /* Adjust width to fit smaller screens */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .label {
-        font-size: 18px; /* Adjust font size for smaller screens */
-        padding: 5px 20px; /* Adjust padding */
-    }
-}
-@media (max-width: 992px) {
-    .images {
-        width: 300px; /* Adjust width for medium screens */
-        height: 225px; /* Adjust height proportionally */
-    }
-
-    .label {
-        font-size: 20px; /* Adjust font size for medium screens */
-        padding: 5px 20px; /* Adjust padding */
+/* Responsive styling for screens smaller than 900px */
+@media only screen and (max-width: 900px) {
+    /* Show the hamburger menu */
+    .hamburger {
+        display: flex;
     }
 }
 
-/* For mobile devices (up to 768px) */
-@media (max-width: 768px) {
-    .images {
-        width: 250px; /* Adjust width for smaller screens */
-        height: 187px; /* Adjust height proportionally */
+/* Restore the original layout for larger screens */
+@media only screen and (min-width: 901px) {
+    /* Show the right_bx and hide the hamburger menu */
+    .hamburger {
+        display: none;
     }
 
-    .label {
-        font-size: 18px; /* Adjust font size for mobile devices */
-        padding: 5px 15px; /* Adjust padding */
+    header nav .right_bx {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header nav .right_bx ul {
+        flex-direction: row;
     }
 }
