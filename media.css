@@ -138,3 +138,120 @@
         margin: 8px 0; /* Adjust margins */
     }
 }
+/* Responsive styles about main page */
+@media (max-width: 992px) {
+    .container {
+      flex-direction: column;
+    }
+    .about-img {
+      padding: 5px 0;
+    }
+    .col-lg-6 {
+      padding: 15px 0;
+    }
+  }
+  @media (max-width: 576px) {
+    .col-lg-6 h1 {
+      font-size: 1.5rem;
+    }
+    .col-lg-6 p {
+      font-size: 0.875rem;
+    }
+    .col-lg-6 .btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+/* Mobile devices (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .supp {
+        display: flex;              /* Flexbox for consistent stacking */
+        flex-direction: column;     /* Ensure items stack vertically */
+        align-items: center;        /* Center the items */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pix {
+        width: 90%;                 /* Ensure images don't take full width for margin breathing space */
+        height: auto;
+        margin: 20px 0;             /* Add vertical spacing between images */
+    }
+
+    .pix img {
+        width: 100%;                /* Full width within the .pix container */
+        height: auto;
+    }
+
+    .label {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+
+    .invest h1 {
+        font-size: 24px;
+    }
+}
+
+/* Tablets (600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .supp {
+        display: flex;              /* Flexbox layout */
+        flex-direction: column;     /* Stack items vertically */
+        align-items: center;        /* Center the items */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pix {
+        width: 80%;                 /* Set a smaller width with space around images */
+        height: auto;
+        margin: 20px 0;             /* Add vertical spacing */
+    }
+
+    .pix img {
+        width: 100%;
+        height: auto;
+    }
+
+    .label {
+        font-size: 20px;
+        padding: 6px 20px;
+    }
+
+    .invest h1 {
+        font-size: 28px;
+    }
+}
+
+/* Small laptops (900px to 1200px) */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    .supp {
+        display: flex;              /* Use Flexbox layout */
+        flex-direction: column;     /* Stack items vertically */
+        align-items: center;        /* Center the items */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .pix {
+        width: 70%;                 /* Slightly smaller width for laptops */
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .pix img {
+        width: 100%;
+        height: auto;
+    }
+
+    .label {
+        font-size: 22px;
+    }
+
+    .invest h1 {
+        font-size: 32px;
+    }
+}
+
