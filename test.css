@@ -1,145 +1,117 @@
-/* Base styles for the navigation */
-header nav {
+
+  .back{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://cdn.dribbble.com/userupload/10078882/file/original-59ae269c790550045f0b7f9078978962.png?resize=1024x768);
+    padding-bottom: -100px;
+  }
+  .back .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back .container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .back .container form {
     width: 100%;
-    height: 12%;
-    margin: 5px auto;
+  }
+  
+  .back .container .section {
+    margin-bottom: 30px;
+  }
+  
+  .back .container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .back .container .form-group {
+    margin-bottom: 0px;
+  }
+  
+  .back .container .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .back .container input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  
+  .back .container .image-preview {
     display: flex;
+    gap: 10px;
+  }
+  
+  .back .container .image-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .back .container .add-image {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .back .container .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .back .container .form-row .form-group {
+    flex: 1;
+  }
+  
+  .back .container .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .back .container .form-actions {
+    display: flex;
     justify-content: space-between;
-}
-
-header nav .right_bx {
-    display: flex;
-    align-items: center;
-}
-
-header nav .right_bx ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-header nav .right_bx ul li {
-    padding: 3px 15px;
-}
-
-header nav .right_bx ul li a {
-    text-decoration: none;
-    color: gray;
-    font-size: 15px;
-    font-weight: 500;
-    transition: .3s linear;
-}
-
-header nav .right_bx ul li a:hover {
-    color: #000;
-}
-
-header nav .right_bx .account_bx {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
-header nav .right_bx .account_bx .bi {
-    margin-left: 15px;
-    color: gray;
+    margin-top: 20px;
+  }
+  
+  .back .container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
     cursor: pointer;
-    transition: .3s linear;
-}
-
-header nav .right_bx .account_bx .bi:hover {
-    color: #000;
-}
-
-/* Hide the checkbox */
-#menuToggle {
-    display: none;
-}
-
-/* Hamburger menu styles */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 22px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 100%;
-    height: 3px;
-    background-color: gray;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-/* When the checkbox is checked, rotate and transform the hamburger menu */
-#menuToggle:checked + .hamburger span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-#menuToggle:checked + .hamburger span:nth-child(2) {
-    opacity: 0;
-}
-
-#menuToggle:checked + .hamburger span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Hide the menu on small screens by default */
-header nav .right_bx {
-    display: none;
-}
-
-/* Show the menu when the checkbox is checked */
-#menuToggle:checked ~ .right_bx {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px 0;
-}
-
-header nav .right_bx ul {
-    flex-direction: column;
-    width: 100%;
-}
-
-header nav .right_bx ul li {
-    padding: 10px 0;
-    margin: 0;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-}
-
-header nav .right_bx .account_bx {
-    margin-top: 15px;
-}
-
-/* Responsive styling for screens smaller than 900px */
-@media only screen and (max-width: 900px) {
-    /* Show the hamburger menu */
-    .hamburger {
-        display: flex;
-    }
-}
-
-/* Restore the original layout for larger screens */
-@media only screen and (min-width: 901px) {
-    /* Show the right_bx and hide the hamburger menu */
-    .hamburger {
-        display: none;
-    }
-
-    header nav .right_bx {
-        display: flex;
-        flex-direction: row;
-    }
-
-    header nav .right_bx ul {
-        flex-direction: row;
-    }
-}
+  }
+  
+  .back .container .back-button {
+    background-color: #ccc;
+  }
+  
+  .back .container .continue-button {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .back .container button:hover {
+    opacity: 0.9;
+  }
+  
