@@ -1,42 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Page</title>
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
-
-<div class="container">
-  <h2>Modal Example</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+    <div class="container">
+        <div class="text-section">
+            <h1>How it works</h1>
+            <p>Investing with us is easy, transparent, & completely online!</p>
+            <a href="#invest" class="button active">INVEST</a>
+            <a href="#earn" class="button">EARN</a>
+            <a href="#track" class="button">TRACK</a>
+            <a href="#sell" class="button">SELL</a>
         </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
+        <div class="image-section">
+            <img id="invest" src="img1bw.jpg" alt="Invest Image" class="image">
+            <img id="earn" src="img2bw.png" alt="Earn Image" class="image">
+            <img id="track" src="img3bw.png" alt="Track Image" class="image">
+            <img id="sell" src="img1c.webp" alt="Sell Image" class="image">
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
     </div>
-  </div>
-  
-</div>
-
 </body>
 </html>

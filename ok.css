@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 20px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: background 0.5s ease, border-color 0.5s ease;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #212C6F;
+}
+
+.section p {
+    margin-top: 5px;
+    color: #666;
+    font-size: 16px;
+}
+
+.section.active,
+.section:target {
+    background: linear-gradient(90deg, #F7E2D6 0%, #FFFFFF 100%);
+    border-left-color: #F7E2D6;
+}
+
+#earn:target {
+    background: linear-gradient(90deg, #E2D6F7 0%, #FFFFFF 100%);
+    border-left-color: #E2D6F7;
+}
+
+#track:target {
+    background: linear-gradient(90deg, #D6F7E2 0%, #FFFFFF 100%);
+    border-left-color: #D6F7E2;
+}
+
+#sell:target {
+    background: linear-gradient(90deg, #F7D6E2 0%, #FFFFFF 100%);
+    border-left-color: #F7D6E2;
+}
+
+/* Set the initial section to be active */
+.section.active {
+    background: linear-gradient(90deg, #F7E2D6 0%, #FFFFFF 100%);
+    border-left-color: #F7E2D6;
+}

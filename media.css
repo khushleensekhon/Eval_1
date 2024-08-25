@@ -225,35 +225,50 @@
     }
 }
 
-/* Small laptops (900px to 1200px) */
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-    .supp {
-        display: flex;              /* Use Flexbox layout */
-        flex-direction: column;     /* Stack items vertically */
-        align-items: center;        /* Center the items */
-        padding-left: 0;
-        text-align: center;
+@media only screen and (max-width: 840px) {
+    /* Flex direction change to column for stacking elements vertically */
+    header .content .choose_bx .select {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 20px 0;
+      height: auto;
     }
-
-    .pix {
-        width: 70%;                 /* Slightly smaller width for laptops */
-        height: auto;
-        margin: 20px 0;
+  
+    /* Stack the cards vertically */
+    header .content .choose_bx .select .card {
+      width: 100%;
+      margin-bottom: 15px;
     }
-
-    .pix img {
-        width: 100%;
-        height: auto;
+  
+    /* Ensure the input fields and button within each card are full-width */
+    header .content .choose_bx .select .card input,
+    header .content .choose_bx .select .card select,
+    header .content .choose_bx .select .card button {
+      width: 100%;
     }
-
-    .label {
-        font-size: 22px;
+  
+    /* Vertical alignment of the book button */
+    header .content .choose_bx .select .card:nth-child(4) {
+      margin-top: 20px;
+      width: 100%;
+      border: none;
+      padding: 10px 0;
     }
-
-    .invest h1 {
-        font-size: 32px;
+    
+    /* Ensure responsive font-size and padding for smaller screens */
+    header .content .choose_bx .select .card h5 {
+      margin-bottom: 8px;
     }
-}
-
-
-
+  
+    /* Adjust the input fields and button padding and size */
+    header .content .choose_bx .select .card input {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    header .content .choose_bx .select .card button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
