@@ -272,3 +272,17 @@
     }
   }
   
+  /* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .new1 .container {
+        flex-direction: column;
+    }
+
+    .new1 .text-section {
+        padding: 10px;
+    }
+
+    .new1 .image-section {
+        display: none; /* Hide image section completely */
+    }
+}
