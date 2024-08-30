@@ -27,9 +27,7 @@
         height: 40px; /* Adjust height for small screens */
     }
 
-    .top {
-        font-size: 6vw; /* Increase font size for small screens */
-    }
+    
 }
 
 @media (max-width: 480px) {
@@ -38,12 +36,10 @@
         height: 30px; /* Adjust height for very small screens */
     }
 
-    .top {
-        font-size: 7vw; /* Increase font size for very small screens */
-    }
+    
 }
 
-@media screen and (max width:767px){
+@media screen and (max-width:767px){
     header{
         overflow: hidden;
     }
@@ -284,5 +280,80 @@
 
     .new1 .image-section {
         display: none; /* Hide image section completely */
+    }
+}
+/* Media query for tablet and smaller screens */
+@media (max-width: 768px) {
+    header .content .cont_bx {
+        width: 90%; /* Adjust the width for smaller screens */
+        padding: 20px;
+    }
+
+    header .content .cont_bx h1 {
+        font-size: 35px; /* Reduce font size */
+        line-height: 40px;
+    }
+
+    header .content .cont_bx p {
+        font-size: 12px; /* Adjust paragraph font size */
+    }
+
+    header .content .cont_bx .images_bx {
+        position: relative;
+        right: 0;
+        top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .content .cont_bx .images_bx .card {
+        width: 80px; /* Increase the width of the cards for better visibility */
+        height: 80px;
+        margin: 10px;
+    }
+
+    header .content .cont_bx .images_bx .card img {
+        height: auto;
+    }
+
+    header .content::before {
+        height: 60%; /* Adjust the background image height */
+        background-position-y: -20px;
+        border-radius: 0;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    header .content .cont_bx {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .content .cont_bx h1 {
+        font-size: 28px; /* Further reduce font size for small screens */
+        line-height: 32px;
+    }
+
+    header .content .cont_bx p {
+        font-size: 10px; /* Reduce paragraph font size */
+    }
+
+    header .content .cont_bx .images_bx {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .content .cont_bx .images_bx .card {
+        width: 60px; /* Reduce card size for small screens */
+        height: 60px;
+        margin: 5px;
+    }
+
+    header .content::before {
+        height: 50%;
+        background-position-y: -30px;
     }
 }

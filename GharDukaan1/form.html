@@ -4,32 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="form.css">
+  
 </head>
 <body>
-
+<header>
   <nav>
     <h4><i class="bi bi-house-door-fill"></i>GharDukaan</h4>
-    
+  
     <input type="checkbox" id="menuToggle" />
-    
+  
     <label for="menuToggle" class="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </label>
-    
+  
     <div class="right_bx">
       <ul>
         <li><a href="#" style="font-size: 13px;">About Us</a></li>
         <li>
-          <a href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="font-size: 13px;">Properties</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Buy</a>
-            <a class="dropdown-item" href="#">Sell</a>
-            <a class="dropdown-item" href="#">Rent</a>
-          </div>
+          <a href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-size: 13px;">Properties</a>
         </li>
         <li><a href="#" style="font-size: 13px;">Contact Us</a></li>
         <li><a href="#" style="font-size: 13px;">Sign Up/ Login</a></li>
@@ -40,6 +37,7 @@
       </div>
     </div>
   </nav>
+</header>
 <div class="back">
   <div class="container">
     <h1>Property Rentings</h1>
@@ -124,24 +122,24 @@
         <div class="form-group">
           <label>Rules</label>
           <div class="checkbox-group">
-            <label><input type="checkbox"> Do not damage the facilities</label>
-            <label><input type="checkbox"> Must pay bills on time</label>
-            <label><input type="checkbox"> Forbidden to carry narcotics and alcohol</label>
+            <label><input type="radio"> Do not damage the facilities</label>
+            <label><input type="radio"> Must pay bills on time</label>
+            <label><input type="radio"> Forbidden to carry narcotics and alcohol</label>
           </div>
         </div>
         <div class="form-group">
           <label>Additional facilities</label>
           <div class="checkbox-group">
-            <label><input type="checkbox"> Squat toilet and wipes</label>
-            <label><input type="checkbox"> Laundry every week max 10kg</label>
-            <label><input type="checkbox"> A security guard is provided</label>
+            <label><input type="radio"> Squat toilet and wipes</label>
+            <label><input type="radio"> Laundry every week max 10kg</label>
+            <label><input type="radio"> A security guard is provided</label>
           </div>
         </div>
       </div>
 
       <!-- Submit Button -->
       <div class="form-actions">
-        <button type="button" class="back-button"><a href="">Back</a></button>
+        <button type="button" class="back-button"><a href="file:///C:/Users/ACER/OneDrive/Desktop/GharDukaan/GharDukaan1/main.html#track">Back</a></button>
         <button type="submit" class="continue-button">Continue</button>
       </div>
     </form>
