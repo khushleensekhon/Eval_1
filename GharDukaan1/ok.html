@@ -3,117 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Fractional Investment</title>
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Link to Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>About Us - Real Estate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f6f8;
-        }
-
-        .section {
-            padding: 50px;
-            background: url('pattern.png');
-            background-size: contain;
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            color: #646c85;
-        }
-
-        .vertical-line {
-            border-left: 4px solid #F3B03A;
-            height: 100%;
-            margin-right: 30px;
-        }
-
-        .card-custom {
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            transition: 0.3s;
-        }
-
-        .card-custom h4 {
-            font-size: 1.4rem;
-            margin-top: 20px;
-        }
-
-        .card-custom p {
-            color: #646c85;
-        }
-
-        .card-custom i {
-            font-size: 2.5rem;
-            color: #2b2e4a;
-        }
-
-        .card-custom:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            transform: translateY(-5px);
-        }
-    </style>
+    <link rel="stylesheet" href="ok.css">
 </head>
 <body>
-    <section class="section d-flex align-items-center">
-        <div class="row w-100">
-            <div class="col-md-6 d-flex align-items-center">
-                <div>
-                    <h2>Understanding Fractional Investment</h2>
-                    <p>Invest in fractions of world-class, rent yielding assets. Earn monthly return and build long-term wealth.</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Real Estate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">About Us</h1>
+            <p class="lead animate__animated animate__fadeInUp">We are the premier real estate investment platform in India, dedicated to simplifying access to lucrative investment opportunities.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x400" class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" alt="About Us">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="animate__animated animate__fadeInRight">Who We Are</h2>
+                    <p class="animate__animated animate__fadeInRight">We are a data-driven, tech-savvy company committed to transforming the real estate industry by offering paperless, accessible, and transparent investment opportunities.</p>
+                    <p class="animate__animated animate__fadeInRight">Our mission is to disrupt the real estate industry by ushering in transformation towards a tech-driven, transparent ecosystem.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div class="vertical-line"></div>
-                    <div class="row w-100">
-                        <div class="col-md-6 mb-4">
-                            <div class="card-custom text-center">
-                                <i class="fas fa-cogs"></i>
-                                <h4>End-To-End Management</h4>
-                                <p>Strata manages the entire investment process for you.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card-custom text-center">
-                                <i class="fas fa-shield-alt"></i>
-                                <h4>Secured And Collateralized</h4>
-                                <p>All assets are backed by legally vetted ownership in land and hard assets.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-custom text-center">
-                                <i class="fas fa-search"></i>
-                                <h4>Due Diligence</h4>
-                                <p>All opportunities are thoroughly vetted by internal and external parties.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-custom text-center">
-                                <i class="fas fa-rupee-sign"></i>
-                                <h4>Superior Returns</h4>
-                                <p>Earn risk mitigated, superior returns from Grade-A assets.</p>
-                            </div>
-                        </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 animate__animated animate__fadeInUp">Our Values</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="value-card p-4 mb-4 text-center bg-white rounded shadow animate__animated animate__fadeInUp">
+                        <h4>Ethics Driven</h4>
+                        <p>Honesty and transparency at every stage.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card p-4 mb-4 text-center bg-white rounded shadow animate__animated animate__fadeInUp">
+                        <h4>Investor-Centric</h4>
+                        <p>We create value for our investors.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="value-card p-4 mb-4 text-center bg-white rounded shadow animate__animated animate__fadeInUp">
+                        <h4>Quality Focused</h4>
+                        <p>Our attention to detail and thoroughness define us.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Real Estate. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

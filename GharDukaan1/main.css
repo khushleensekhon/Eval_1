@@ -454,41 +454,7 @@ header .content .choose_bx .select .card button:nth-child(3) .date i{
 }
 
 
-/*SLIDER 
-
-
-.slider {
-    overflow: hidden;
-    padding: 60px 0;
-    white-space: nowrap;
-    position: relative; 
-}
-
-.slider:hover {
-    animation-play-state: paused; 
-}
-
-.sli {
-    display: inline-block;
-    animation: 30s slide infinite linear;
-}
-
-.sli img {
-    height: 180px; 
-    padding-left: 20px; 
-}
-
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-
+/*
 
 
   /* Base styles 
@@ -775,11 +741,20 @@ header .content .choose_bx .select .card button:nth-child(3) .date i{
       color: #333;
       margin-bottom: 20px;
   }
-  
+  .new1 .text-section a:active{
+    border-left: 5px solid #d4a037;
+  }
+  .new1 .text-section a:visited{
+    border-left: 5px solid #d4a037;
+  }
+  .new1 .text-section a:hover{
+    border-left: 5px solid #d4a037;
+  }
   .new1 .text-section .button {
       display: block;
       width: 100%;
       padding: 10px;
+      border-left: 5px solid #d4a037;
       margin-bottom: 10px;
       border: none;
       background: linear-gradient(90deg, #F7E2D6 0%, #FFFFFF 100%);

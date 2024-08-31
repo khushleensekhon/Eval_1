@@ -306,11 +306,11 @@ header nav {
 }
 
 .wallpaper{
-  background: linear-gradient(rgba(243, 235, 235, 0.8),rgba(243, 235, 235, 0.8)),url(map1.png);
+  background: linear-gradient(rgba(132, 132, 148, 0.8),rgba(243, 235, 235, 0.8)),url(map1.png);
 }
 
-.container {
-  margin-top: 10%;
+/* .container {
+  margin-top: 5%;
   display: flex;
   justify-content: space-around;
   width: 90%;
@@ -318,7 +318,7 @@ header nav {
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.7);
+  background: url(https://cdn.prod.website-files.com/6218a919266b38e43584d335/64e883a9e3548f7d5718ef9d_vision.webp);
   color: white;
   flex: 1;
   margin: 10px;
@@ -333,8 +333,45 @@ header nav {
 
 .card p {
   line-height: 1.6;
+} */
+.about-section img {
+  transition: transform 0.5s ease-in-out;
 }
 
+.about-section img:hover {
+  transform: scale(1.05);
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+}
+
+/* Values Section */
+.values-section h2 {
+  font-size: 2.5rem;
+}
+
+.value-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-card h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+}
 /* Optional: Add some hover effect */
 .card:hover {
   background-color: rgba(0, 0, 0, 0.85);
