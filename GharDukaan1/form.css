@@ -101,7 +101,10 @@
     justify-content: space-between;
     margin-top: 20px;
   }
-  
+  .modal-header h5, .modal-body p {
+    color: #000; 
+}
+
   button {
     padding: 10px 20px;
     border: none;
@@ -115,7 +118,7 @@
   }
   
   .continue-button {
-    background-color: #4a90e2;
+    background-color: rgb(88, 94, 144);
     color: white;
   }
   

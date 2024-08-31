@@ -321,7 +321,9 @@ header nav {
     background-color: #00164F;
     width: 100
 }
-
+.modal-header h5, .modal-body p {
+    color: #000; 
+}
 
 .contact-section {
     display: flex;
