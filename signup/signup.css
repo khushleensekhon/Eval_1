@@ -12,8 +12,149 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column; /* Updated to include navbar and signup form in the same flow */
 }
 
+/* Navbar Styling */
+header {
+    width: 100%;
+    transition: .3s linear;
+}
+
+header nav {
+    background-color: #fff;
+    padding-left: 50px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav h4 {
+    font-size: larger;
+    margin: 0;
+}
+
+header nav .right_bx {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_bx ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav .right_bx ul li {
+    padding: 3px 15px;
+}
+
+header nav .right_bx ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
+
+header nav .right_bx ul li a:hover {
+    color: #000;
+}
+
+header nav .right_bx .account_bx {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+header nav .right_bx .account_bx .bi {
+    margin-left: 15px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+header nav .right_bx .account_bx .bi:hover {
+    color: #000;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+    transition: 0.3s ease;
+}
+
+/* Hide the menu initially */
+input[type="checkbox"] {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Align the right_bx vertically and hide it initially */
+    header nav .right_bx {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Adjust the menu items to stack vertically */
+    header nav .right_bx ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav .right_bx ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show the hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Display the menu when the checkbox is checked */
+    input[type="checkbox"]:checked ~ .right_bx {
+        display: flex;
+    }
+
+    /* Hamburger animation to "X" */
+    input[type="checkbox"]:checked + label .hamburger span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    input[type="checkbox"]:checked + label .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked + label .hamburger span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+/* Sign-Up Form Styling */
 .signup-box {
     display: flex;
     justify-content: center;
@@ -23,6 +164,9 @@ body {
     background: rgba(196, 194, 194, 0.9);
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjusted to create space below the navbar */
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
 
 .signup-header {
@@ -112,7 +256,7 @@ body {
 .social-icons a {
     width: 60px;
     height: 60px;
-    background: #1c1c1c;
+    background: #2d2c2c;
     border-radius: 50%;
     color: #ffffff;
     font-size: 25px;
@@ -123,4 +267,23 @@ body {
 
 .social-icons a:hover {
     background: #000;
+}
+#bgVideo {
+    background: ;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2; 
+    object-fit: cover;
+}
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    z-index: -1; 
 }
